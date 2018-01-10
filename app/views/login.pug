@@ -1,0 +1,14 @@
+extends template
+
+block content
+    h1 Welcome to Dorm Supplies
+    form(name='myform')
+        h2 Log in
+    input(type='email' name='email' placeholder='Email' id='email') 
+    br
+    input(type='password' name='password' placeholder='password' id='password') 
+    br
+    input(type='button' value='submit' onclick='submit()')
+
+block postScript
+    script submitOnEnterKey(submitForm);
